@@ -199,7 +199,7 @@ button {
   width: 100%;
   height: 100%;
   background-color: #fff;
-  z-index: 999;
+  z-index: 998;
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -209,6 +209,16 @@ button {
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
+}
+
+.mobile-menu-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 72px;
+  padding-bottom: 40px;
+  padding-left: 16px;
+  height: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -223,34 +233,88 @@ button {
   right: 24px;
   background-color: transparent;
   border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .mobile-menu-btn-icon {
+  fill: #2e2f42;
 }
 .mobile-menu-header-nav {
+  display: flex;
+  flex-direction: column;
 }
 .mobile-menu-header-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 .mobile-menu-header-item {
 }
 .mobile-menu-header-item-link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.current {
+.mobile-menu-header-item-link:hover,
+.mobile-menu-header-item-link:focus {
+  color: #404bbf;
 }
 .mobile-menu-header-address {
+  display: flex;
+  margin-top: auto;
 }
 .mobile-menu-header-address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 .mobile-menu-header-address-item {
 }
 .mobile-menu-header-address-item-link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+  font-style: normal;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu-header-address-item-link:hover,
+.mobile-menu-header-address-item-link:focus {
+  color: #4d5ae5;
 }
 .mobile-menu-team-social {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
 }
 .mobile-menu-team-social-item {
+  margin-top: 48px;
 }
 .mobile-menu-team-social-link {
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
 }
 .mobile-menu-team-icon {
+  fill: #f4f4fd;
 }
 
 /* ---------------------------------HEADER-MENU--------------------------- */
+
+/* ---------------------------------HERO--------------------------- */
